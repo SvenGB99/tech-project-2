@@ -23,7 +23,6 @@ p {
 }
 
 h1 {
-    display: inline-block;
     background-color: darkgreen;
 }
 h2,
@@ -51,6 +50,7 @@ ul {
     margin: 0;
     text-align: center;
     padding-bottom: 10px;
+    margin: auto;
 }
 
 .main-nav {
@@ -120,9 +120,11 @@ ul {
     margin-bottom: 0;
     border-top: 2px solid darkgray;
 }
-.footer h1 {
+.fname {
+    display: inline-block;
     font-size: 3em;
     float: left;
+    background-color: blanchedalmond;
     }
 
 .tablet-footer-div {
@@ -130,7 +132,8 @@ ul {
 }
 
 .mobile-footer-div {
-    display: block;
+    display: inline-block;
     float: right;
     font-size: 2em;
+    margin-top: 0;
 }
