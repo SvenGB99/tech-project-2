@@ -137,3 +137,33 @@ ul {
     font-size: 2em;
     margin-top: 0;
 }
+
+/* media quiries */
+
+@media (min-width: 769px)
+
+body {
+    padding: 50px;
+}
+
+.name {
+    font-size: 2.5em;
+}
+
+.main-header {
+    width: 100%;
+}
+
+.sc {
+    margin: 0 auto;
+}
+
+.main-nav  li {
+    display: inline-block;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.main-nav a {
+    font-size: 1.10em;
+}
