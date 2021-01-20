@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
     padding: 2em;
     background: #f17070; /* <--- change to white after page has been built*/
@@ -11,20 +11,21 @@ a {
     color: rgb(44, 40, 40);
     text-align: center;
     text-transform: uppercase;
-    text-decoration: none;
     display: block;
     padding: 10px 15px;
+    background: chartreuse;
 }
 
-li {
-    text-decoration: none;
-}
 
 p {
     font-size: .95em;
     margin-bottom: 1.8em;
 }
 
+h1 {
+    display: inline-block;
+    background-color: darkgreen;
+}
 h2,
 h3,
 h4 {
@@ -35,30 +36,104 @@ img {
     max-width: 100%;
 }
 
-
-/* base layout styles */
+ul {
+    list-style-type: none;
+}
+/* ========================
+base layout styles
+=========================== */
 
 /* navigation */
 
+.sc{
+    background: cornflowerblue;
+}
 .name {
-    font-size: 1.25em;
+    font-size: 4.25em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .main-nav {
     margin-top: 5px;
+    padding-left: 0;
 }
 
 .main-nav a {
     display: block;
     text-align: center;
     padding: 10px 15px;
-    font-size: .95em;
+    font-size: 2.25em;
+    font-weight: bold;
     text-decoration: none;
 }
+
+/* Banner */
+
+.profile-pic {
+   display: block;
+   margin: auto;
+   height: 400px;
+}
+.intro {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* headding */
 
 .portfolio {
     text-align: center;
     display: block;
+    font-size: 3em;
+}
+
+/* Containers */
+
+.pc h2 {
+    text-align: center;
+    font-size: 3em;
+    display: block;
+    margin: auto;    
+}
+
+.pc p {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Contact */
+
+.info h2 {
+    text-align: center;
+    display: block;
+    font-size: 3em;
+    margin: auto;
+}
+
+.info p {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* footer */
+.footer {
+    margin-bottom: 0;
+    border-top: 2px solid darkgray;
+}
+.footer h1 {
+    font-size: 3em;
+    float: left;
+    }
+
+.tablet-footer-div {
+    display: none;
+}
+
+.mobile-footer-div {
+    display: block;
+    float: right;
     font-size: 2em;
 }
