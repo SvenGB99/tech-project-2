@@ -45,7 +45,7 @@ ul {
     /* background: cornflowerblue; */
 }
 .name {
-    font-size: 4.25em;
+    font-size: 2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     text-align: center;
@@ -62,7 +62,7 @@ ul {
     display: block;
     text-align: center;
     padding: 10px 15px;
-    font-size: 2.25em;
+    font-size: .95em;
     font-weight: bold;
     text-decoration: none;
 }
@@ -72,11 +72,11 @@ ul {
 .profile-pic {
    display: block;
    margin: auto;
-   height: 400px;
+   width: 300px;
 }
 .intro {
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 /* headding */
@@ -84,21 +84,21 @@ ul {
 .portfolio {
     text-align: center;
     display: block;
-    font-size: 3em;
+    font-size: 1.75em;
 }
 
 /* Containers */
 
 .pc h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 1.25em;
     display: block;
     margin: auto;    
 }
 
 .pc p {
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 /* Contact */
@@ -106,24 +106,33 @@ ul {
 .info h2 {
     text-align: center;
     display: block;
-    font-size: 3em;
+    font-size: 1.25em;
     margin: auto;
 }
 
 .info p {
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 /* footer */
+
 .footer {
     margin-bottom: 0;
     border-top: 2px solid darkgray;
 }
+
+ 
+.footer h2,
+.mfd {
+    display: inline-block;
+    /* position: absolute; */
+}
+
 .fname {
-    font-size: 3em;
+    font-size: .95em;
     /* background-color: blanchedalmond; */
-    float: left;
+    /* display: inline-block; */
     }
 
  .tfd {
@@ -131,19 +140,139 @@ ul {
 }
 
 .mfd {
-    font-size: 2em;
-    margin-top: 0;
-    float: right;
+    font-size: .95em;
 }
 
 .mfd a {
     text-decoration: none;
+    padding: 0;
+    position: absolute;
+    right: 32px;  
 }
 
-/* Media Queries */
+/* =================
+    Media Queries 
+   =================*/
 
 @media (min-width: 768px) {
    body {
        background-color: red;
    } 
+
+   /* navigation */
+
+.name {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: auto;
 }
+
+.main-nav {
+    float: center;
+}
+.main-nav li {
+    float: left;
+    margin-left: 10px;
+}
+
+/* Banner */
+
+/* .banner {
+    float: none;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.profile-pic {
+    float: left;
+    width: 40;
+}
+
+.intro {
+    width: 50%;
+    margin-left: 10px;
+} */
+
+
+/* headding */
+
+.portfolio {
+    text-align: center;
+    display: block;
+    font-size: 1.75em;
+}
+
+/* Containers */
+
+.pc h2 {
+    text-align: center;
+    font-size: 1.25em;
+    display: block;
+    margin: auto;    
+}
+
+.pc p {
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Contact */
+
+.info h2 {
+    text-align: center;
+    display: block;
+    font-size: 1.25em;
+    margin: auto;
+}
+
+.info p {
+    text-align: center;
+    font-size: 1em;
+}
+
+/* footer */
+
+.footer {
+    margin-bottom: 0;
+    border-top: 2px solid darkgray;
+}
+
+ 
+.footer h2,
+.mfd {
+    display: inline-block;
+    /* position: absolute; */
+}
+
+.fname {
+    font-size: .95em;
+    /* background-color: blanchedalmond; */
+    /* display: inline-block; */
+    }
+
+ .tfd {
+    display: none;
+}
+
+.mfd {
+    font-size: .95em;
+}
+
+.mfd a {
+    text-decoration: none;
+    padding: 0;
+    position: absolute;
+    right: 32px;  
+}
+
+}
+
+/* clearfix */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
