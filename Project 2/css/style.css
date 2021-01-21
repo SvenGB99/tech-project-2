@@ -5,7 +5,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
     padding: 2em;
-    /* background: #f17070; <--- change to white after page has been built */
+    background-color: #fff; /*<--- change to white after page has been built */
 }
 a {
     color: rgb(44, 40, 40);
@@ -140,7 +140,7 @@ ul {
     text-decoration: none;
 }
 
-/* Media Quiries */
+/* Media Queries */
 
 @media (min-width: 768px) {
    body {
