@@ -4,18 +4,14 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
-    padding: 2em;
-    background-color: #fff; /*<--- change to white after page has been built */
 }
 a {
     color: rgb(44, 40, 40);
     text-align: center;
     text-transform: uppercase;
     display: block;
-    padding: 10px 15px;
     /* background: chartreuse; */
 }
-
 
 p {
     font-size: .95em;
@@ -31,23 +27,21 @@ h4 {
     margin-top: 0;
 }
 
-img {
-    max-width: 100%;
-}
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 /* navigation */
 
-.sc{
-    /* background: cornflowerblue; */
+.main-header{
+    padding: 32px 0 15px 0;
+    background: rgb(245, 245, 245);
 }
 .name {
     font-size: 2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
     text-align: center;
     padding-bottom: 10px;
     margin: auto;
@@ -55,54 +49,88 @@ ul {
 
 .main-nav {
     margin-top: 5px;
-    padding-left: 0;
+}
+.main-nav ul {
+    margin: auto;
 }
 
 .main-nav a {
     display: block;
     text-align: center;
-    padding: 10px 15px;
     font-size: .95em;
     font-weight: bold;
     text-decoration: none;
+    background-color: #fff;
+    margin: auto;
+    padding: 5px 0;
+    border-left: 15px solid rgb(245, 245, 245);
+    border-right: 15px solid rgb(245, 245, 245);
+    border-bottom: 5px solid rgb(245, 245, 245);
+    border-top: 5px solid rgb(245, 245, 245);
 }
 
 /* Banner */
 .banner {
-    text-align: center;
+    padding-top: 16px;
+    background: rgb(245, 245, 245);
+    
 }
 .pp {
    display: block;
-   margin: auto;
-   width: 300px;
+   margin: 0 auto;
+   padding-bottom: 20px;
+   max-width: 90%;
+   min-width: 50%;
 }
 .intro {
+    width: 90%;
     font-size: 1em;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 /* headding */
 
 .portfolio {
+    width: 90%;
     text-align: center;
     display: block;
     font-size: 1.75em;
+    margin: auto;
+    padding-bottom: 10px;
 }
 
 /* Containers */
+.container{
+    width: 100%;
+}
+.col img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
 
-.pc h2 {
+.col h2 {
     text-align: center;
     font-size: 1.25em;
-    display: block;
-    margin: auto;    
 }
 
-.pc p {
+.col p {
     text-align: center;
     font-size: 1em;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
+
 /* Contact */
+.info {
+    border-bottom: 2px solid darkgray;
+    padding-bottom: 10px;
+}
 
 .info h2 {
     text-align: center;
@@ -112,26 +140,30 @@ ul {
 }
 
 .info p {
+    width: 90%;
     text-align: center;
     font-size: 1em;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 /* footer */
 
 .footer {
-    margin-bottom: 0;
-    border-top: 2px solid darkgray;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
 }
 
  
 .footer h2,
 .mfd {
-    display: inline-block;
-    /* position: absolute; */
+    display: inline;
 }
 
 .fname {
     font-size: .95em;
+    margin-left: ;
     /* background-color: blanchedalmond; */
     /* display: inline-block; */
     }
@@ -142,12 +174,17 @@ ul {
 
 .mfd {
     font-size: .95em;
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: right;
 }
-
+.mfd li {
+    display: inline-block;
+}
 .mfd a {
     text-decoration: none;
     padding: 0;
-    position: absolute;
     right: 32px;  
 }
 
@@ -155,148 +192,192 @@ ul {
     Media Queries 
    =================*/
 
-@media (min-width: 768px) {
-   body {
-       background-color: red;
-   } 
-
-   /* navigation */
-
-.name {
-    font-size: 2em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    text-align: center;
-    padding-bottom: 10px;
-    margin: auto;
-}
-
-.main-nav{
-    text-align: center;
-}
-
-.main-nav li{
-    display: inline-block;
-}
-
-/* Banner */
-.banner {
-    width: 90%;
-    text-align: start;
-    padding-left: 32px;
+   @media (min-width: 768px) {
     
-}
-.pp {
-    float: right;
-    margin-left: 10px;
-}
-
-
-.banner:last-child {
-    padding-right: 0;
-}
-
-.intro {
-    max-width: 420px;
-    /* text-align: left; */
+     
+    /* navigation */
+    .main-header{
+        padding: 32px 0 15px 0;
+        background: rgb(245, 245, 245);
+    }
+    .name {
+        font-size: 2em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        padding-bottom: 10px;
+        margin: auto;
+    }
     
-}
-/* headding */
-
-.portfolio {
-    text-align: center;
-    display: block;
-    font-size: 1.75em;
-}
-
-
-/* Containers */
-.container {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
-.col {
-    float: left;
-    padding-right: 1em;
-}
-
-.col {
-    width: 50%;
-}
-
-/* Contact */
-.info {
-    background-color: brown;
-}
-.info h2 {
-    text-align: center;
-    display: block;
-    font-size: 1.25em;
-    margin: auto;
-}
-
-.info p {
-    text-align: center;
-    font-size: 1em;
-}
-
-/* footer */
-.footer {
-    width: 100%;
-    text-align: left;
-    padding-bottom: 0;
-    background-color: blanchedalmond;
-}
-
-
-.footer,
-.mfd {
-    display: inline-block;
-}
-
-.mfd {
-   display: none;
-}
-
-.tfd {
-    display: block;
-    position: left;
-    background-color: blue;
-}
-.tfd ul {
-    float: right;
-    display: block;
-}
-
-.tfd a {
-    text-decoration: none;
-    padding: 0 5px;
-    right: 32px;  
-}
-
-
-}
-
-/* clearfix */
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  @media (min-width: 1025px) {
+    .main-nav {
+        margin-top: 5px;
+    }
+    .main-nav ul {
+        margin: auto;
+    }
     
-    .container{
-        width: 80%;
-        max-width: 1150px;
-    } 
-
-    .col {
-        width: 33%;
+    .main-nav a {
+        display: block;
+        text-align: center;
+        font-size: .95em;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: rgb(245, 245, 245);
+        margin: auto;
+        padding: 5px 10px;
+        border: none;
     }
 
+    .main-nav{
+     text-align: center;
+ }
+ 
+    .main-nav li{
+     display: inline-block;
+ }
 
-
-  }
+    /* Banner */
+    .banner {
+        padding-top: 5px;
+}
+    .pp {
+        float: right;
+        width: 25%;
+        max-width: 500px;
+        margin: 2.5% 2.5% 2.5% 0;
+}
+ 
+ 
+    .banner:last-child {
+     padding-right: 0;
+}
+ 
+    .intro {
+    text-align: left;
+    max-width: 40%;
+    float: left;
+    margin: auto;
+    margin: 2.5% 0 0 2.5%;
+    /* text-align: left; */
+     
+}
+    /* headding */
+ 
+    .portfolio {
+     text-align: center;
+     display: block;
+     padding: 60px 10px;
+     font-size: 1.75em;
+}
+ 
+ 
+    /* Containers */
+    .container {
+        width: 95;
+        margin: 0 auto;
+        text-align: center;
+ }
+    .col {
+        float: left;
+        padding-right: 1em;
+ }
+ 
+    .col {
+     width: 50%;
+ }
+ 
+    /* Contact */
+    .info {
+        background-color: brown;
+        background-color: rgb(245, 245, 245);
+ }
+    .info h2 {
+        text-align: center;
+        display: block;
+        font-size: 1.25em;
+        margin: auto;
+ }
+ 
+    .info p {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1em;
+ }
+ 
+    /* footer */
+    .footer {
+        width: 100%;
+        text-align: left;
+        padding-bottom: 0;
+        background-color: blanchedalmond;
+ }
+ 
+    .footer {
+        padding: 10px 32px 60px 32px;
+        display: inline-block;
+        background-color: rgb(245, 245, 245);
+ }
+ 
+    
+ 
+    .tfd {
+        display: block;
+        padding: 0;
+        margin: 0;
+        float: right;
+ }
+ 
+    .tfd li {
+        display: inline-block;
+ }
+    .tfd a {
+        text-decoration: none;
+        padding: 0 5px;
+        right: 32px;  
+ }
+    
+    .mfd {
+        display: none;
+ }
+ 
+ }
+ 
+ /* clearfix */
+ 
+ .clearfix::after {
+     content: "";
+     clear: both;
+     display: table;
+   }
+ 
+   @media (min-width: 1025px) {
+     body {
+         background: royalblue;
+     }
+     .container{
+         width: 95%;
+         max-width: 1150px;
+     } 
+ 
+     .col {
+         width: 33%;
+     }
+ 
+     .info {
+         width: 50%;
+         margin: auto;
+         border: none;
+     }
+ 
+     .footer{
+         border-top: 2px solid darkgray;
+     }
+ 
+     .fname {
+         padding-top: 10px;
+     }
+     
+     .tfd ul {
+         padding: 10px;
+     }
+   }
