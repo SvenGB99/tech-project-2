@@ -68,14 +68,15 @@ ul {
 }
 
 /* Banner */
-
-.profile-pic {
+.banner {
+    text-align: center;
+}
+.pp {
    display: block;
    margin: auto;
    width: 300px;
 }
 .intro {
-    text-align: center;
     font-size: 1em;
 }
 
@@ -170,27 +171,36 @@ ul {
     margin: auto;
 }
 
+.main-nav{
+    text-align: center;
+}
+
 .main-nav li{
     display: inline-block;
 }
-/* Banner */
 
-/* .banner {
-    float: none;
-    padding-left: 1px;
-    padding-right: 1px;
+/* Banner */
+.banner {
+    width: 90%;
+    text-align: start;
+    padding-left: 32px;
+    
 }
-.profile-pic {
-    float: left;
-    width: 40;
+.pp {
+    float: right;
+    margin-left: 10px;
+}
+
+
+.banner:last-child {
+    padding-right: 0;
 }
 
 .intro {
-    width: 50%;
-    margin-left: 10px;
-} */
-
-
+    max-width: 420px;
+    /* text-align: left; */
+    
+}
 /* headding */
 
 .portfolio {
@@ -199,22 +209,26 @@ ul {
     font-size: 1.75em;
 }
 
-/* Containers */
 
-.pc h2 {
+/* Containers */
+.container {
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
-    font-size: 1.25em;
-    display: block;
-    margin: auto;    
+}
+.col {
+    float: left;
+    padding-right: 1em;
 }
 
-.pc p {
-    text-align: center;
-    font-size: 1em;
+.col {
+    width: 50%;
 }
 
 /* Contact */
-
+.info {
+    background-color: brown;
+}
 .info h2 {
     text-align: center;
     display: block;
@@ -228,37 +242,31 @@ ul {
 }
 
 /* footer */
-
 .footer {
-    margin-bottom: 0;
-    border-top: 2px solid darkgray;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 0;
+    background-color: blanchedalmond;
 }
 
- 
-.footer h2,
+
+.footer,
 .mfd {
     display: inline-block;
-    /* position: absolute; */
-}
-
-.fname {
-    font-size: .95em;
-    /* background-color: blanchedalmond; */
-    /* display: inline-block; */
-    }
-
- .tfd {
-    display: none;
 }
 
 .mfd {
-    font-size: .95em;
+   display: none;
 }
 
-.mfd a {
+.tfd {
+    display: inline-block;
+    position: right;
+    background-color: blue;
+}
+.tfd a {
     text-decoration: none;
-    padding: 0;
-    position: absolute;
+    padding: 0 5px;
     right: 32px;  
 }
 
@@ -270,4 +278,19 @@ ul {
     content: "";
     clear: both;
     display: table;
+  }
+
+  @media (min-width: 1025px) {
+    
+    .container{
+        width: 80%;
+        max-width: 1150px;
+    } 
+
+    .col {
+        width: 33%;
+    }
+
+
+
   }
