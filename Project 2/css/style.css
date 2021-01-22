@@ -260,15 +260,21 @@ ul {
 }
 
 .tfd {
-    display: inline-block;
-    position: right;
+    display: block;
+    position: left;
     background-color: blue;
 }
+.tfd ul {
+    float: right;
+    display: block;
+}
+
 .tfd a {
     text-decoration: none;
     padding: 0 5px;
     right: 32px;  
 }
+
 
 }
 
