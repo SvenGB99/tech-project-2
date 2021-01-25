@@ -104,6 +104,7 @@ ul {
 /* Containers */
 .container{
     width: 100%;
+    padding-bottom: 30px;
 }
 .col img {
     width: 90%;
@@ -127,16 +128,24 @@ ul {
 
 
 /* Contact */
+
 .info {
-    border-bottom: 2px solid darkgray;
-    padding-bottom: 10px;
+    /* border-bottom: 2px solid darkgray; */
+    /* width: 90%;
+    margin: auto; */
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background: rgb(245, 245, 245);
 }
 
 .info h2 {
+    width: 90%;
+    margin: auto;
     text-align: center;
     display: block;
     font-size: 1.25em;
     margin: auto;
+    padding-bottom: 20px;
 }
 
 .info p {
@@ -144,28 +153,29 @@ ul {
     text-align: center;
     font-size: 1em;
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 /* footer */
 
 .footer {
-    width: 90%;
     margin: 0 auto;
     padding: 10px 0 10px 0;
+    background: rgb(245, 245, 245);
 }
 
  
-.footer h2,
+.fanme,
 .mfd {
-    display: inline;
+    float: left;
 }
 
 .fname {
     font-size: .95em;
-    margin-left: ;
+    /* margin-left: ; */
     /* background-color: blanchedalmond; */
-    /* display: inline-block; */
+    display: inline-block;
+    padding-left: 5%;
     }
 
  .tfd {
@@ -174,8 +184,8 @@ ul {
 
 .mfd {
     font-size: .95em;
-    display: block;
-    padding: 0;
+    /* display: block; */
+    padding: 0 5% 0 0;
     margin: 0;
     float: right;
 }
@@ -185,7 +195,6 @@ ul {
 .mfd a {
     text-decoration: none;
     padding: 0;
-    right: 32px;  
 }
 
 /* =================
@@ -310,15 +319,10 @@ ul {
         text-align: left;
         padding-bottom: 0;
         background-color: blanchedalmond;
- }
- 
-    .footer {
         padding: 10px 32px 60px 32px;
         display: inline-block;
         background-color: rgb(245, 245, 245);
  }
- 
-    
  
     .tfd {
         display: block;
@@ -350,10 +354,42 @@ ul {
      display: table;
    }
  
-   @media (min-width: 1025px) {
+@media (min-width: 1025px) {
      body {
          background: royalblue;
      }
+
+     .main-header {
+        width: 100%;
+        text-align: left;
+        padding-bottom: 0;
+        background-color: blanchedalmond;
+        padding: 10px 32px 60px 32px;
+        display: inline-block;
+        background-color: rgb(245, 245, 245);
+ }
+ 
+    .name{
+        display: inline;
+    }
+    
+ 
+    .main-nav {
+        display: block;
+        padding: 0;
+        margin: 0;
+        float: right;
+ }
+ 
+    .main-nav li {
+        display: inline-block;
+ }
+    .main-nav a {
+        text-decoration: none;
+        padding: 0 5px;
+        right: 32px;  
+ }
+
      .container{
          width: 95%;
          max-width: 1150px;
