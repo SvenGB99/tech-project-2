@@ -73,6 +73,7 @@ ul {
 .banner {
     padding-top: 16px;
     background: rgb(245, 245, 245);
+    padding-bottom: 30px;
     
 }
 .pp {
@@ -98,7 +99,7 @@ ul {
     display: block;
     font-size: 1.75em;
     margin: auto;
-    padding-bottom: 10px;
+    padding:30px 0;
 }
 
 /* Containers */
@@ -295,10 +296,11 @@ ul {
  }
  
     /* Contact */
-    .info {
-        background-color: brown;
-        background-color: rgb(245, 245, 245);
- }
+    
+    .cont {
+        background-color: rgb(245, 245, 245) ;
+    }
+    
     .info h2 {
         text-align: center;
         display: block;
@@ -325,7 +327,7 @@ ul {
  }
  
     .tfd {
-        display: block;
+        display: inline-block;
         padding: 0;
         margin: 0;
         float: right;
