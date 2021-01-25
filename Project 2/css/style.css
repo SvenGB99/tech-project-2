@@ -4,6 +4,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
+    background: rgb(245, 245, 245);
 }
 a {
     color: rgb(44, 40, 40);
@@ -63,16 +64,15 @@ ul {
     background-color: #fff;
     margin: auto;
     padding: 5px 0;
-    border-left: 15px solid rgb(245, 245, 245);
+    /* border-left: 15px solid rgb(245, 245, 245);
     border-right: 15px solid rgb(245, 245, 245);
     border-bottom: 5px solid rgb(245, 245, 245);
-    border-top: 5px solid rgb(245, 245, 245);
+    border-top: 5px solid rgb(245, 245, 245); */
 }
 
 /* Banner */
 .banner {
     padding-top: 16px;
-    background: rgb(245, 245, 245);
     padding-bottom: 30px;
     
 }
@@ -94,7 +94,8 @@ ul {
 /* headding */
 
 .portfolio {
-    width: 90%;
+    background-color: #fff;
+    width: 100%;
     text-align: center;
     display: block;
     font-size: 1.75em;
@@ -104,6 +105,7 @@ ul {
 
 /* Containers */
 .container{
+    background-color: #fff;
     width: 100%;
     padding-bottom: 30px;
 }
@@ -136,7 +138,6 @@ ul {
     margin: auto; */
     padding-bottom: 30px;
     padding-top: 30px;
-    background: rgb(245, 245, 245);
 }
 
 .info h2 {
@@ -162,7 +163,6 @@ ul {
 .footer {
     margin: 0 auto;
     padding: 10px 0 10px 0;
-    background: rgb(245, 245, 245);
 }
 
  
@@ -208,7 +208,6 @@ ul {
     /* navigation */
     .main-header{
         padding: 32px 0 15px 0;
-        background: rgb(245, 245, 245);
     }
     .name {
         font-size: 2em;
@@ -231,7 +230,6 @@ ul {
         font-size: .95em;
         font-weight: bold;
         text-decoration: none;
-        background-color: rgb(245, 245, 245);
         margin: auto;
         padding: 5px 10px;
         border: none;
@@ -297,10 +295,6 @@ ul {
  
     /* Contact */
     
-    .cont {
-        background-color: rgb(245, 245, 245) ;
-    }
-    
     .info h2 {
         text-align: center;
         display: block;
@@ -320,10 +314,8 @@ ul {
         width: 100%;
         text-align: left;
         padding-bottom: 0;
-        background-color: blanchedalmond;
         padding: 10px 32px 60px 32px;
         display: inline-block;
-        background-color: rgb(245, 245, 245);
  }
  
     .tfd {
@@ -357,18 +349,13 @@ ul {
    }
  
 @media (min-width: 1025px) {
-     body {
-         background: royalblue;
-     }
 
      .main-header {
         width: 100%;
         text-align: left;
         padding-bottom: 0;
-        background-color: blanchedalmond;
         padding: 10px 32px 60px 32px;
         display: inline-block;
-        background-color: rgb(245, 245, 245);
  }
  
     .name{
