@@ -11,7 +11,6 @@ a {
     text-align: center;
     text-transform: uppercase;
     display: block;
-    /* background: chartreuse; */
 }
 
 p {
@@ -19,9 +18,6 @@ p {
     margin-bottom: 1.8em;
 }
 
-h1 {
-    /* background-color: darkgreen; */
-}
 h2,
 h3,
 h4 {
@@ -33,16 +29,22 @@ ul {
     list-style-type: none;
     padding: 0;
 }
+ul a:hover {
+    color: mediumblue;
+}
+
+ul a:active{
+    color: #fff;
+}
 
 /* navigation */
 
 .main-header{
     padding: 32px 0 15px 0;
-    background: rgb(245, 245, 245);
 }
 .name {
     font-size: 2em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: monospace, 'Courier New', Courier;
     text-align: center;
     padding-bottom: 10px;
     margin: auto;
@@ -64,10 +66,10 @@ ul {
     background-color: #fff;
     margin: auto;
     padding: 5px 0;
-    /* border-left: 15px solid rgb(245, 245, 245);
+    border-left: 15px solid rgb(245, 245, 245);
     border-right: 15px solid rgb(245, 245, 245);
     border-bottom: 5px solid rgb(245, 245, 245);
-    border-top: 5px solid rgb(245, 245, 245); */
+    border-top: 5px solid rgb(245, 245, 245);
 }
 
 /* Banner */
@@ -128,41 +130,46 @@ ul {
     margin: 0 auto;
     padding-bottom: 10px;
 }
-
+.pc1,
+.pc2,
+.pc3,
+.pc4,
+.pc5,
+.pc6 {
+    padding-bottom: 50px;
+}
 
 /* Contact */
 
 .info {
-    /* border-bottom: 2px solid darkgray; */
-    /* width: 90%;
-    margin: auto; */
+    width: 90%;
+    margin: 0 auto;
     padding-bottom: 30px;
     padding-top: 30px;
 }
 
 .info h2 {
-    width: 90%;
-    margin: auto;
     text-align: center;
     display: block;
     font-size: 1.25em;
-    margin: auto;
     padding-bottom: 20px;
+    margin: 0;
 }
 
 .info p {
-    width: 90%;
     text-align: center;
     font-size: 1em;
-    margin: 0 auto;
     padding-bottom: 20px;
+    margin: 0;
 }
 
 /* footer */
 
 .footer {
+    width: 90%;
     margin: 0 auto;
-    padding: 10px 0 10px 0;
+    padding: 30px 0;
+    border-top: 2px solid darkgray;
 }
 
  
@@ -173,10 +180,7 @@ ul {
 
 .fname {
     font-size: .95em;
-    /* margin-left: ; */
-    /* background-color: blanchedalmond; */
     display: inline-block;
-    padding-left: 5%;
     }
 
  .tfd {
@@ -185,8 +189,6 @@ ul {
 
 .mfd {
     font-size: .95em;
-    /* display: block; */
-    padding: 0 5% 0 0;
     margin: 0;
     float: right;
 }
@@ -202,8 +204,11 @@ ul {
     Media Queries 
    =================*/
 
-   @media (min-width: 768px) {
+   @media (min-width: 767px) {
     
+    body {
+        background: rgb(124, 142, 165);
+    }
      
     /* navigation */
     .main-header{
@@ -227,12 +232,13 @@ ul {
     .main-nav a {
         display: block;
         text-align: center;
-        font-size: .95em;
+        font-size: 1.25em;
         font-weight: bold;
         text-decoration: none;
         margin: auto;
         padding: 5px 10px;
         border: none;
+        background-color: rgb(124,142,165);
     }
 
     .main-nav{
@@ -261,12 +267,11 @@ ul {
  
     .intro {
     text-align: left;
+    font-size: 1.5em;
     max-width: 40%;
     float: left;
     margin: auto;
-    margin: 2.5% 0 0 2.5%;
-    /* text-align: left; */
-     
+    margin: 2.5% 0 0 2.5%;     
 }
     /* headding */
  
@@ -280,13 +285,10 @@ ul {
  
     /* Containers */
     .container {
-        width: 95;
-        margin: 0 auto;
         text-align: center;
  }
     .col {
         float: left;
-        padding-right: 1em;
  }
  
     .col {
@@ -306,18 +308,17 @@ ul {
         width: 60%;
         margin: 0 auto;
         text-align: center;
-        font-size: 1em;
+        font-size: 1.25em;
  }
  
     /* footer */
-    .footer {
-        width: 100%;
-        text-align: left;
-        padding-bottom: 0;
-        padding: 10px 32px 60px 32px;
-        display: inline-block;
- }
- 
+    .footer{
+        padding: 15px 0 50px 0;
+    }
+    .fname {
+        float: left;
+        font-size: 1.25em;
+    }
     .tfd {
         display: inline-block;
         padding: 0;
@@ -348,13 +349,16 @@ ul {
      display: table;
    }
  
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
+    body {
+        background: rgb(165, 155, 201);
+    }
      .main-header {
         width: 100%;
         text-align: left;
         padding-bottom: 0;
-        padding: 10px 32px 60px 32px;
+        padding: 40px 5% 60px 5%;
         display: inline-block;
  }
  
@@ -362,6 +366,10 @@ ul {
         display: inline;
     }
     
+    .pp {
+        max-width: 10%;
+        padding-right: 3.5%;
+    }
  
     .main-nav {
         display: block;
@@ -379,30 +387,17 @@ ul {
         right: 32px;  
  }
 
-     .container{
-         width: 95%;
-         max-width: 1150px;
-     } 
- 
-     .col {
+    .col {
          width: 33%;
      }
  
-     .info {
-         width: 50%;
-         margin: auto;
-         border: none;
-     }
- 
-     .footer{
-         border-top: 2px solid darkgray;
-     }
- 
-     .fname {
-         padding-top: 10px;
-     }
-     
-     .tfd ul {
-         padding: 10px;
-     }
+    .info {
+         width: 66%;
+         margin: 0 auto;
+}
+
+    .footer {
+        border-top: 2px solid black;
+    }
+
    }
