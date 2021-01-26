@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Varela Round', sans-serif, 'Times New Roman', Times, serif;
     line-height: 1.5;
     background: rgb(245, 245, 245);
 }
@@ -17,6 +17,14 @@ p {
     font-size: .95em;
     margin-bottom: 1.8em;
 }
+h1 {
+    font-family: Perpetua ,Candara, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 23px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 23px;
+} 
 
 h2,
 h3,
@@ -43,8 +51,7 @@ ul a:active{
     padding: 32px 0 15px 0;
 }
 .name {
-    font-size: 2em;
-    font-family: monospace, 'Courier New', Courier;
+    font-size: 2em;    
     text-align: center;
     padding-bottom: 10px;
     margin: auto;
@@ -141,14 +148,16 @@ ul a:active{
 
 /* Contact */
 
-.info {
+.info,
+.skill {
     width: 90%;
     margin: 0 auto;
     padding-bottom: 30px;
     padding-top: 30px;
 }
 
-.info h2 {
+.info h2,
+.skill h2 {
     text-align: center;
     display: block;
     font-size: 1.25em;
@@ -156,7 +165,8 @@ ul a:active{
     margin: 0;
 }
 
-.info p {
+.info p,
+.skill p {
     text-align: center;
     font-size: 1em;
     padding-bottom: 20px;
@@ -216,7 +226,6 @@ ul a:active{
     }
     .name {
         font-size: 2em;
-        font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: center;
         padding-bottom: 10px;
         margin: auto;
